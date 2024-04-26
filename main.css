@@ -17,6 +17,7 @@
 }
 
 .container {
+    text-align: center;
     margin: auto;
     width: 70%;
     padding: 40px;
@@ -97,7 +98,57 @@ body.mouse{
 a.mouse{
     width: 1px;
     height: 1px;
-    color: white;
+    color: #ff10f0;
     position: absolute;
     transition: 900ms linear;
+}
+
+@keyframes unicorn1 {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes unicorn2 {
+    0% {
+        transform: translateY(0%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-100%) rotate(42deg);
+    }
+}
+
+@keyframes unicorn3 {
+    0% {
+        transform: translateY(0%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-100%) rotate(67deg);
+    }
+}
+
+@keyframes unicorn4 {
+    0% {
+        transform: translateY(0%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-100%) rotate(242deg);
+    }
+}
+
+@keyframes unicorn5 {
+    0% {
+        transform: translateY(0%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-100%) rotate(360deg);
+    }
 }

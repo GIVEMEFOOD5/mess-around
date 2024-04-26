@@ -5,6 +5,8 @@ document.onmousemove = (e) => {
     image.style.left = `${e.clientX}px`;
     image.style.top = `${e.clientY}px`;
 
+    image.style.animation = "unicorn 1s ease forwards";
+
     image.style.transition = "0.25s ease";
 
     document.body.appendChild(image);
