@@ -78,11 +78,6 @@ p{
     opacity: 100%;
 }
 
-p1{
-    text-align: center;
-    opacity: 100%;
-}
-
 button{
     width: 50px;
     height: 20px;
@@ -93,5 +88,15 @@ button{
 
 body.mouse{
     background-color: #ff10f0;
-    cursor: url(unicorn1.png), auto;
+    cursor: url('unicorn1.cur'), auto;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+a.mouse{
+    width: 1px;
+    height: 1px;
+    color: #ff10f0;
+    border-radius: 0px;
 }
