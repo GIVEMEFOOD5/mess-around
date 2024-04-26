@@ -97,6 +97,7 @@ body.mouse{
 a.mouse{
     width: 1px;
     height: 1px;
-    color: #ff10f0;
-    border-radius: 0px;
+    color: white;
+    position: absolute;
+    transition: 900ms linear;
 }
