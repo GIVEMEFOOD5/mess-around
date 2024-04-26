@@ -24,16 +24,8 @@
     border-radius: 50px;
     border-width: 3px;
     color: #ff10f0;
-}
 
-h2{
     text-align: center;
-    opacity: 100%;
-}
-
-p{
-    text-align: center;
-    opacity: 100%;
 }
 
 .btncard {
@@ -49,10 +41,49 @@ p{
     align-items: center;
 }
 
+.column{
+    float: left;
+    width: 33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btnbox{
+    margin: auto;
+    width: 50px;
+    padding: 20px;
+
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    opacity: 100%;
+}
+
+p{
+    text-align: center;
+    opacity: 100%;
+}
+
+p1{
+    text-align: center;
+    opacity: 100%;
+}
+
 button{
     width: 50px;
     height: 20px;
     border-radius: 20px;
     background-color: #ff10f0;
     border-color: #ff10f0;
+}
+
+body.mouse{
+    background-color: red;
+    cursor: url('unicorn1.png'), auto;
 }
