@@ -24,6 +24,7 @@
     border-radius: 50px;
     border-width: 3px;
     color: #ff10f0;
+}
 
 h2 {
     text-align: center;
@@ -91,6 +92,6 @@ button{
 }
 
 body.mouse{
-    background-color: red;
-    cursor: url('unicorn1.png'), auto;
+    background-color: #ff10f0;
+    cursor: url(unicorn1.png), auto;
 }
