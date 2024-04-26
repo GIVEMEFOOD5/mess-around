@@ -93,6 +93,8 @@ body.mouse{
 
     width: 100vw;
     height: 100vh;
+
+    overflow: hidden;
 }
 
 a.mouse{
