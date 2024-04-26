@@ -47,17 +47,17 @@ const img2 = document.getElementById("img2");
 const img3 = document.getElementById("img3");
 
 setInterval(() => {
-    btn.style.top = `${Math.floor((Math.random() * 700) + 1)}px`;
-    btn.style.left = `${Math.floor((Math.random() * 700) + 1)}px`;
+    btn.style.top = `${Math.floor((Math.random() * window.innerHeight) + 1)}px`;
+    btn.style.left = `${Math.floor((Math.random() * window.innerWidth) + 1)}px`;
 
     img0.style.top = `${Number(btn.style.top.replace("px", "")) + 10}px`;
     img0.style.left = `${Number(btn.style.left.replace("px", "")) + 10}px`;
     img0.style.filter = "invert()";
 
-    img1.style.top = Math.floor((Math.random() * 700) + 1) + "px";
-    img1.style.left = Math.floor((Math.random() * 700) + 1) + "px";
-    img2.style.top = Math.floor((Math.random() * 700) + 1) + "px";
-    img2.style.left = Math.floor((Math.random() * 700) + 1) + "px";
-    img3.style.top = Math.floor((Math.random() * 700) + 1) + "px";
-    img3.style.left = Math.floor((Math.random() * 700) + 1) + "px";
+    img1.style.top = Math.floor((Math.random() * window.innerHeight) + 1) + "px";
+    img1.style.left = Math.floor((Math.random() * window.innerWidth) + 1) + "px";
+    img2.style.top = Math.floor((Math.random() * window.innerHeight) + 1) + "px";
+    img2.style.left = Math.floor((Math.random() * window.innerWidth) + 1) + "px";
+    img3.style.top = Math.floor((Math.random() * window.innerHeight) + 1) + "px";
+    img3.style.left = Math.floor((Math.random() * window.innerWidth) + 1) + "px";
 }, 1000);
