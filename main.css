@@ -1,8 +1,8 @@
-﻿body{
+﻿body {
     background-color: black;
 }
 
-.heading{
+.heading {
     margin: auto;
     width: 50%;
     padding: 10px;
@@ -16,7 +16,7 @@
     color: #ff10f0
 }
 
-.container{
+.container {
     margin: auto;
     width: 70%;
     padding: 40px;
@@ -25,7 +25,14 @@
     border-width: 3px;
     color: #ff10f0;
 
+h2 {
     text-align: center;
+    opacity: 100%;
+}
+
+p {
+    text-align: center;
+    opacity: 100%;
 }
 
 .btncard {
