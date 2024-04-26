@@ -5,7 +5,7 @@ document.onmousemove = (e) => {
     image.style.left = `${e.clientX}px`;
     image.style.top = `${e.clientY}px`;
 
-    image.style.animation = "unicorn 1s ease forwards";
+    image.style.animation = `unicorn${Math.floor(Math.random() * 5)} 1s ease forwards`;
 
     image.style.transition = "0.25s ease";
 
