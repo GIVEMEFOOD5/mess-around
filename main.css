@@ -86,6 +86,7 @@ button{
     background-color: #ff10f0;
     border-color: #ff10f0;
 }
+/*fine button click game work*/
 
 body.mouse{
     background-color: #ff10f0;
@@ -153,4 +154,76 @@ a.mouse{
     100% {
         transform: translateY(-100%) rotate(360deg);
     }
+}
+
+/*snake work*/
+
+body.snake{
+    background-color: #ff10f0;
+
+    width: 100vw;
+    height: 80vh;
+
+    overflow: hidden;
+
+    cursor: url('unicorn1.cur'), auto;
+}
+
+.arrow-keys {
+    position: fixed;
+    bottom: 10px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.arrow-keys div {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border: 1px solid #999;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.arrow-up-container {
+    position: absolute;
+    top: -50px; /* Adjust this value to move the up arrow */
+    left: calc(50% - 15px); /* Center the arrow */
+  }
+
+.arrow-up, .arrow-down {
+    width: 100%;
+  }
+  
+  .arrow-left, .arrow-right {
+    height: 100%;
+  }
+
+.arrow-up:before {
+  content: '\2191'; /* Unicode arrow up symbol */
+}
+
+.arrow-down:before {
+  content: '\2193'; /* Unicode arrow down symbol */
+}
+
+.arrow-left:before {
+  content: '\2190'; /* Unicode arrow left symbol */
+}
+
+.arrow-right:before {
+  content: '\2192'; /* Unicode arrow right symbol */
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute; /* changed from relative to absolute */
+    left: 0; /* initialize left position */
+    top: 0; /* initialize top position */
 }
