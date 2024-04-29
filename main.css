@@ -63,9 +63,8 @@ p {
 
 .btnbox{
     margin: auto;
-    width: 50px;
+    width: 100px;
     padding: 20px;
-
     text-align: center;
 }
 
@@ -226,4 +225,14 @@ body.snake{
     position: absolute; /* changed from relative to absolute */
     left: 0; /* initialize left position */
     top: 0; /* initialize top position */
+}
+
+/*fun page stuff*/
+
+.clicks{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ff10f0;
+    border-color: #ff10f0;
 }
