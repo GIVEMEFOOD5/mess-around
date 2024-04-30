@@ -1,0 +1,1 @@
+document.body.style.backgroundColor = localStorage.getItem("colour") || "black";
