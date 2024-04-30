@@ -50,6 +50,14 @@ p {
     align-items: center;
 }
 
+input{
+    color: #ff10f0;
+    width: 30%;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+
 .column{
     float: left;
     width: 33%;
