@@ -10,4 +10,8 @@ setInterval(() => {
     document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
     localStorage.setItem("colour", `rgb(${r}, ${g}, ${b})`);
+
+    if (localStorage.getItem("colour") == "rgb(,,,)") {
+        localStorage.setItem("colour", "black");
+    }
 });

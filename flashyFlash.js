@@ -15,12 +15,14 @@ function changeColor() {
 
 // Function to start flashing colors
 function startFlashing() {
-    // Flash colors every 1 milliseconds
-    flashingInterval = setInterval(changeColor, 1);
-    // Stop flashing after 5 seconds (5000 milliseconds)
-    setTimeout(function() {
-        clearInterval(flashingInterval);
-
-        document.body.style.backgroundColor = "black";
-    }, 5000);
+    if (confirm("Flashing lights?")) {
+        // Flash colors every 1 milliseconds
+        flashingInterval = setInterval(changeColor, 1);
+        // Stop flashing after 5 seconds (5000 milliseconds)
+        setTimeout(function() {
+            clearInterval(flashingInterval);
+            
+            document.body.style.backgroundColor = "black";
+        }, 5000);
+    }
 }

@@ -29,6 +29,11 @@
     color: #ff10f0;
 
     background-color: rgba(255, 16, 240, 0.1);
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h2 {
