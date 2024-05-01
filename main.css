@@ -13,7 +13,9 @@
     
     text-align: center;
     text-decoration-line: underline;
-    color: #ff10f0
+    color: #ff10f0;
+
+    background-color: rgba(255, 16, 240, 0.1);
 }
 
 .container {
@@ -25,6 +27,8 @@
     border-radius: 50px;
     border-width: 3px;
     color: #ff10f0;
+
+    background-color: rgba(255, 16, 240, 0.1);
 }
 
 h2 {
@@ -50,13 +54,14 @@ p {
     align-items: center;
 }
 
-input{
+input[type="text"]{
     color: #ff10f0;
     width: 30%;
     background-color: black;
     border-radius: 10px;
     text-align: center;
     border-color: #ff10f0;
+    outline: none;
 }
 
 .column{
@@ -88,8 +93,6 @@ p{
 }
 
 button{
-    width: 50px;
-    height: 20px;
     border-radius: 20px;
     background-color: #ff10f0;
     border-color: #ff10f0;
