@@ -260,3 +260,76 @@ body.snake{
     background-color: #ff10f0;
     border-color: #ff10f0;
 }
+
+/*BEANS*/
+
+head.beans{
+    position: absolute;
+}
+
+body.beans{
+    background-image: url('beansontoast.png');
+
+    cursor: url('beansontoast1.cur'), auto;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+.beansHead {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ff10f0;
+    
+    text-align: center;
+    text-decoration-line: underline;
+    color: #ff10f0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.moving-image1 {
+    position: absolute;
+    top: 20%;
+    left: -500px; 
+    animation: moveImage 1s linear infinite;
+}
+
+.moving-image2 {
+    position: absolute;
+    top: 30%;
+    left: -500px;
+    animation: moveImage 2s linear infinite;
+}
+
+.moving-image3 {
+    position: absolute;
+    top: 40%;
+    left: -500px;
+    animation: moveImage 3s linear infinite;
+}
+
+.moving-image4 {
+    position: absolute;
+    top: 50%;
+    left: -500px;
+    animation: moveImage 4s linear infinite;
+}
+
+@keyframes moveImage {
+    0% {
+        left: -500px;
+    }
+    50% {
+        left: calc(100% / 2);
+    }
+    100% {
+        left: calc(100% + 200px);
+    }
+}
