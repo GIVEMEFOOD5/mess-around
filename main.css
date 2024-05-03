@@ -33,6 +33,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     justify-content: center;
 }
 
@@ -59,7 +60,7 @@ p {
     align-items: center;
 }
 
-input[type="text"]{
+input[type="text"] {
     color: #ff10f0;
     width: 30%;
     background-color: black;
@@ -69,38 +70,43 @@ input[type="text"]{
     outline: none;
 }
 
-.column{
+.column {
     float: left;
     width: 33%;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7rem;
+    justify-content: center;
 }
 
-.btnbox{
+.btnbox {
     margin: auto;
-    width: 100px;
-    padding: 20px;
+    width: 20%px;
+    padding: 20%;
     text-align: center;
 }
 
-h2{
-    text-align: center;
-    opacity: 100%;
-}
-
-p{
+h2 {
     text-align: center;
     opacity: 100%;
 }
 
-button{
-    border-radius: 20px;
+p {
+    text-align: center;
+    opacity: 100%;
+}
+
+button {
+    border-radius: 40px;
     background-color: #ff10f0;
     border-color: #ff10f0;
+    width: 100px;
+    height: 50px;
 }
 
 .color-box {
@@ -111,7 +117,7 @@ button{
 
 /*fine button click game work*/
 
-body.mouse{
+body.mouse {
     background-color: #ff10f0;
     cursor: url('unicorn1.cur'), auto;
 
@@ -121,7 +127,7 @@ body.mouse{
     overflow: hidden;
 }
 
-a.mouse{
+a.mouse {
     width: 1px;
     height: 1px;
     color: #ff10f0;
@@ -163,7 +169,7 @@ a.mouse{
     0% {
         transform: translateY(0%) rotate(0deg);
     }
-
+    
     100% {
         transform: translateY(-100%) rotate(242deg);
     }
@@ -173,7 +179,7 @@ a.mouse{
     0% {
         transform: translateY(0%) rotate(0deg);
     }
-
+    
     100% {
         transform: translateY(-100%) rotate(360deg);
     }
@@ -181,14 +187,14 @@ a.mouse{
 
 /*snake work*/
 
-body.snake{
+body.snake {
     background-color: #ff10f0;
-
+    
     width: 100vw;
     height: 80vh;
-
+    
     overflow: hidden;
-
+    
     cursor: url('unicorn1.cur'), auto;
 }
 
@@ -201,33 +207,33 @@ body.snake{
 }
 
 .arrow-keys div {
-  width: 30px;
-  height: 30px;
-  background-color: #ccc;
-  border: 1px solid #999;
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 
 .arrow-up-container {
     position: absolute;
     top: -50px; /* Adjust this value to move the up arrow */
     left: calc(50% - 15px); /* Center the arrow */
-  }
+}
 
 .arrow-up, .arrow-down {
     width: 100%;
-  }
-  
-  .arrow-left, .arrow-right {
+}
+
+.arrow-left, .arrow-right {
     height: 100%;
-  }
+}
 
 .arrow-up:before {
-  content: '\2191'; /* Unicode arrow up symbol */
+    content: '\2191'; /* Unicode arrow up symbol */
 }
 
 .arrow-down:before {
@@ -253,21 +259,20 @@ body.snake{
 
 /*fun page stuff*/
 
-.clicks{
-    width: 100px;
-    height: 40px;
+.clicks {
     border-radius: 20px;
     background-color: #ff10f0;
     border-color: #ff10f0;
+    text-align: center;
 }
 
 /*BEANS*/
 
-head.beans{
+head.beans {
     position: absolute;
 }
 
-body.beans{
+body.beans {
     background-image: url('beansontoast.png');
 
     cursor: url('beansontoast1.cur'), auto;
@@ -292,6 +297,8 @@ body.beans{
     color: #ff10f0;
 
     background-color: rgba(0, 0, 0, 0.5);
+
+    backdrop-filter: blur(20px);
 }
 
 .moving-image1 {
