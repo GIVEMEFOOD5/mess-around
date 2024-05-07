@@ -23,7 +23,7 @@ document.addEventListener("keydown", (e) => {
             break;
         default:
             return; // Do nothing if other keys are pressed
-    }
+    } 
 
     image.style.left = `${left}px`;
     image.style.top = `${top}px`;

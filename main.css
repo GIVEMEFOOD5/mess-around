@@ -80,8 +80,7 @@ input[type="text"] {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 7rem;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .btnbox {
@@ -109,13 +108,7 @@ button {
     height: 50px;
 }
 
-.color-box {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-}
-
-/*fine button click game work*/
+/*find button click game work*/
 
 body.mouse {
     background-color: #ff10f0;
@@ -248,28 +241,26 @@ body.snake {
   content: '\2192'; /* Unicode arrow right symbol */
 }
 
-.box {
-    width: 50px;
-    height: 50px;
-    background-color: blue;
-    position: absolute; /* changed from relative to absolute */
-    left: 0; /* initialize left position */
-    top: 0; /* initialize top position */
-}
-
 /*fun page stuff*/
 
 .clicks {
     border-radius: 20px;
     background-color: #ff10f0;
     border-color: #ff10f0;
-    text-align: center;
 }
 
 /*BEANS*/
 
 head.beans {
     position: absolute;
+}
+
+button.beans {
+    border-radius: 40px;
+    background-color: #ff10f0;
+    border-color: #ff10f0;
+    width: 100px;
+    height: 50px;
 }
 
 body.beans {
