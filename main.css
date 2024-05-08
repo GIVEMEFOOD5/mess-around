@@ -33,6 +33,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
 }
@@ -70,17 +71,22 @@ input[type="text"] {
     outline: none;
 }
 
-.column {
-    float: left;
-    width: 33%;
-}
-
 .row {
     align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.column {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .btnbox {
@@ -244,9 +250,11 @@ body.snake {
 /*fun page stuff*/
 
 .clicks {
-    border-radius: 20px;
+    border-radius: 100vw;
     background-color: #ff10f0;
     border-color: #ff10f0;
+    flex-grow: 1; /* This makes the buttons take up equal space within the flex container */
+    margin: 3vw; /* Optional: Add some spacing between buttons */
 }
 
 /*BEANS*/
