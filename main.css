@@ -331,3 +331,76 @@ body.beans {
         left: calc(100% + 200px);
     }
 }
+
+/*star wars thing*/
+
+body.star {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: 0;
+    overflow: hidden; /* Avoid the scrollbar */
+    color: yellow;
+
+    /* Center the elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.a-long-time-ago {
+    /* looks */
+    font-size: 32px;
+    color: #4bd5ee;
+    /* Animation */
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-name: a-long-time-ago;
+    animation-timing-function: ease-out;
+
+    /* Center the element */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes a-long-time-ago {
+    0%   { opacity: 0; }
+    20%  { opacity: 1; }
+    80%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.crawl {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    left: 20%; /* 20% away from the left side */
+    right: 20%; /* 20% away from the right side */
+    font-size: 32px;
+    transform: perspective(280px) rotateX(25deg) translateY(100%);
+    animation-name: crawl;
+    animation-delay: 4s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    transition: opacity 1s ease; /* Transition for opacity */
+}
+
+@keyframes crawl {
+    0% {
+        transform: perspective(280px) rotateX(25deg) translateY(100%);
+    }
+    50% {
+        opacity: 1; /* Gradual opacity increase */
+    }
+    100% {
+        transform: perspective(280px) rotateX(25deg) translateY(-100%);
+        opacity: 0;
+    }
+}
