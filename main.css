@@ -186,6 +186,33 @@ a.mouse {
 
 /*snake work*/
 
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+  
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 body.snake {
     height: 100vh;
     width: 100vw;
@@ -198,56 +225,6 @@ body.snake {
     overflow: hidden;
     
     cursor: url('unicorn1.cur'), auto;
-}
-
-.arrow-keys {
-    position: fixed;
-    bottom: 10px; /* Adjust this value as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-}
-
-.arrow-keys div {
-    width: 30px;
-    height: 30px;
-    background-color: #ccc;
-    border: 1px solid #999;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-}
-
-.arrow-up-container {
-    position: absolute;
-    top: -50px; /* Adjust this value to move the up arrow */
-    left: calc(50% - 15px); /* Center the arrow */
-}
-
-.arrow-up, .arrow-down {
-    width: 100%;
-}
-
-.arrow-left, .arrow-right {
-    height: 100%;
-}
-
-.arrow-up:before {
-    content: '\2191'; /* Unicode arrow up symbol */
-}
-
-.arrow-down:before {
-  content: '\2193'; /* Unicode arrow down symbol */
-}
-
-.arrow-left:before {
-  content: '\2190'; /* Unicode arrow left symbol */
-}
-
-.arrow-right:before {
-  content: '\2192'; /* Unicode arrow right symbol */
 }
 
   #game-board {
