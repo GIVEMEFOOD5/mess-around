@@ -1,5 +1,5 @@
 
-import { getInputDirection } from "./input.js"
+import { getInputDirection } from "./snakeMove.js"
 
 export const SNAKE_SPEED = 5
 const snakeBody = [{ x: 11, y: 11 }]
