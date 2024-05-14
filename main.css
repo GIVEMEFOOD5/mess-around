@@ -287,11 +287,6 @@ body.snake {
     border-color: #ff10f0;
     flex-grow: 1; /* This makes the buttons take up equal space within the flex container */
     margin: 3vw; /* Optional: Add some spacing between buttons */
-
-    height: 3vw;
-    width: 10vw;
-
-    font-size: 1vw;
 }
 
 /*BEANS*/
