@@ -264,7 +264,7 @@ body.snake {
 }
 
 #left {
-    left: calc(50% - 40vmin);
+    left: calc(50% - 140px);
 }
 
 #down {
@@ -272,11 +272,11 @@ body.snake {
 }
 
 #right {
-    left: calc(50% + 28vmin);
+    left: calc(50% + 80px);
 }
 
 #up {
-    left: calc(50% - 30px)
+    left: calc(50% - 30px);
 }
 
 /*fun page stuff*/
@@ -451,13 +451,13 @@ body.star {
 /*warning page*/
 
 body.warn {
-    font-size: 3vw;
+    font-size: 20px;
 }
 
 .warning-container {
     text-align: center;
     margin: auto;
-    width: 50%;
+    width: 30%;
     padding: 40px;
     border-style: solid;
     border-radius: 50px;
@@ -472,11 +472,10 @@ body.warn {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+
+    margin-top: 40px;
 }
 
 button.warn {
-    font-size: 3vw;
-
-    width: 15vw;
-    height: 5vw;
+    font-size: 20px;
 }
