@@ -231,24 +231,57 @@ body.snake {
     cursor: url('unicorn1.cur'), auto;
 }
 
-  #game-board {
+#game-board-container {
+    position: relative;
+    display: inline-block;
+}
+
+#game-board {
     background-color: #ff10f0;
-    width: 100vmin;
-    height: 100vmin;
+    width: 80vmin;
+    height: 80vmin;
     display: grid;
     grid-template-rows: repeat(21, 1fr);
     grid-template-columns: repeat(21, 1fr);
-  }
+}
 
-  .snake {
+.snake {
     background-color:rgb(0, 0, 0);
     border: .25vmin solid black;
-  }
+}
 
-  .food {
+.food {
     background-color: hsl(50, 100%, 50%);
     border: .25vmin solid black;
-  }
+}
+
+#up {
+    position: absolute;
+    bottom: 70px;
+}
+
+#down,
+#left,
+#right {
+    position: absolute;
+    bottom: 10px;
+}
+
+#left {
+    left: calc(50% - 40vmin);
+}
+
+#down {
+    left: calc(50% - 15px);
+}
+
+#right {
+    left: calc(50% + 30vmin);
+}
+
+#up {
+    left: calc(50% - 15px)
+}
 
 /*fun page stuff*/
 
@@ -404,7 +437,7 @@ body.star {
     transform: perspective(280px) rotateX(25deg) translateY(100%);
     animation-name: crawl;
     animation-delay: 3s;
-    animation-duration: 16s;
+    animation-duration: 17s;
     animation-timing-function: linear;
     transition: opacity 0.5s ease; /* Transition for opacity */
     display: flex;
