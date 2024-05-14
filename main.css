@@ -16,6 +16,8 @@
     color: #ff10f0;
 
     background-color: rgba(255, 16, 240, 0.1);
+
+    font-size: 2vw;
 }
 
 .container {
@@ -36,6 +38,8 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+
+    font-size: 2vw;
 }
 
 h2 {
@@ -254,6 +258,11 @@ body.snake {
     border-color: #ff10f0;
     flex-grow: 1; /* This makes the buttons take up equal space within the flex container */
     margin: 3vw; /* Optional: Add some spacing between buttons */
+
+    height: 3vw;
+    width: 10vw;
+
+    font-size: 1vw;
 }
 
 /*BEANS*/
@@ -415,6 +424,12 @@ body.star {
     }
 }
 
+/*warning page*/
+
+body.warn {
+    font-size: 3vw;
+}
+
 .warning-container {
     text-align: center;
     margin: auto;
@@ -433,4 +448,11 @@ body.star {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+}
+
+button.warn {
+    font-size: 3vw;
+
+    width: 15vw;
+    height: 5vw;
 }
