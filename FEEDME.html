@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mess around</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="Murder Duck.png" type="image/x-icon">
+</head>
+<body class="feed" style="height: 150vh;">
+
+    <button onclick="location.href = 'index.html'">HOME</button>
+
+    <div class="heading">
+        <h1>FEED ME</h1>
+    </div>
+    <br>
+    <div class="container">
+
+        <img id="murder-duck" src="Murder Duck.png" alt="">
+
+        <div class="row">
+            <div class="column">
+                <img onclick="feed('cheese')" class="feed" src="cheese.png" id="cheese">
+            </div>
+            <div class="column">
+                <img onclick="feed('bacon')" class="feed" src="bacon.png" alt="" id="bacon">
+            </div>
+            <div class="column">
+                <img onclick="feed('cookie')" class="feed" src="cookie.png" alt="" id="cookie">
+            </div>
+        </div>
+    </div>
+    
+    <script src="getpain.js"></script>
+    <script src="FEEDME.js"></script>
+</body>
+</html>

@@ -8,17 +8,17 @@
     <link rel="shortcut icon" href="Murder Duck.jpg" type="image/x-icon">
 </head>
 <body>
-
     <button onclick="location.href = 'index.html'">HOME</button>
-
-    <div class="heading">
-        <h1></h1>
-    </div>
     <br>
-    <div class="container">
-
-    </div>
-    
     <script src="getpain.js"></script>
+
+    <script>
+        setInterval(() => {
+            var duck = document.createElement("img");
+            duck.src = "Murder Duck.png";
+
+            document.body.appendChild(duck);
+        });
+    </script>
 </body>
 </html>

@@ -479,3 +479,9 @@ body.warn {
 button.warn {
     font-size: 20px;
 }
+
+/*feed me page */
+
+img.feed {
+    width: 10rem;
+}
