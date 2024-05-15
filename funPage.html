@@ -11,7 +11,7 @@
     <button onclick="location.href = 'index.html'">HOME</button>
 
     <div class="heading">
-        <h1><u>The Fun Page</u></h1>
+        <h1 onclick ="window.open('https://en.wikipedia.org/wiki/Special:Random', '_blank')"><u>The Fun Page</u></h1>
     </div>
     <br>
 
@@ -49,7 +49,7 @@
                 </div>
                 <div class="column">
                     <div class="">
-                        <button class="clicks">CCCC</button>
+                        <button class="clicks" onclick="startFlashing()">CCCC</button>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                         <button class="clicks">BBBB</button>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column" onclick="getRandom()">
                     <div class="">
                         <button class="clicks">CCCC</button>
                     </div>
@@ -75,5 +75,6 @@
 
     <script src="flashyFlash.js"></script>
     <script src="getpain.js"></script>
+    <script src="random.js"></script>
 </body>
 </html>
