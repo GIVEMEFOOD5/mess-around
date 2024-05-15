@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mess around</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="Murder Duck.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="Murder Duck.png" type="image/x-icon">
 </head>
 <body>
-    <button onclick="location.href = 'index.html'">HOME</button>
-    <br>
     <script src="getpain.js"></script>
 
     <script>
@@ -18,6 +16,10 @@
             duck.src = "Murder Duck.png";
 
             document.body.appendChild(duck);
+
+            setTimeout(() => {
+                window.close();
+            }, 1000);
         });
     </script>
 </body>
