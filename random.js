@@ -4,7 +4,9 @@ const links = [
     "starWars.html",
     "beans.html",
     "index.html",
-    "startFlashingNoWarn()"
+    "startFlashingNoWarn()",
+    "crash.html",
+    "FEEDME.html"
 ]
 
 function getRandom() {
