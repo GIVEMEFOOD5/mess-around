@@ -1,11 +1,17 @@
 let duckyOpinion = document.getElementById('ducky');
 
+let feedCount = localStorage.getItem("feed-count");
+
+if (feedCount == null) {
+    feedCount = 0;
+}
+
 if (localStorage.getItem("food-count") < 10) {
-    duckyOpinion.innerHTML = `IM HANGRY, FEED ME MORE!!<br><br>YOU HAS ONLY FEED ME ${localStorage.getItem("food-count")} TIMES >:(!`;
+    duckyOpinion.innerHTML = `IM HANGRY, FEED ME MORE!!<br><br>YOU HAS ONLY FEED ME ${feedCount} TIMES >:(!`;
 }
 
 else {
-    duckyOpinion.innerHTML = `THANK YOU FOR FEEDS ME!!<br><br>YOU HAS FEEDS ME ${localStorage.getItem("food-count")} TIMES :D!`;
+    duckyOpinion.innerHTML = `THANK YOU FOR FEEDS ME!!<br><br>YOU HAS FEEDS ME ${feedCount} TIMES :D!`;
 }
 
 function feed(food) {
