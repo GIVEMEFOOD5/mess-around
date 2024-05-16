@@ -38,7 +38,7 @@ function count() {
         }
 
         else {
-            duckyOpinion.innerHTML = `THANK YOU FOR FEEDS ME!!<br><br>YOU HAS FEEDS ME ${functionCallCount} TIMES >:(!`;
+            duckyOpinion.innerHTML = `THANK YOU FOR FEEDS ME!!<br><br>YOU HAS FEEDS ME ${functionCallCount} TIMES :D!`;
         }
     };
 }
