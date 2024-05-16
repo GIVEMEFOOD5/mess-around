@@ -38,7 +38,7 @@ function feed(food) {
     // Set a timeout to remove the inline styles after 5 seconds
     setTimeout(function() {
         foodElement.removeAttribute("style");
-    }, 5000); // 5000 milliseconds = 5 seconds
+    }, 5000);
 }
 
 
