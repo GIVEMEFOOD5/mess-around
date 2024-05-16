@@ -37,7 +37,16 @@ function feed(food) {
 
     // Set a timeout to remove the inline styles after 5 seconds
     setTimeout(function() {
-        foodElement.removeAttribute("style");
+        foodElement.style.transition = "none";
+        foodElement.style.position = "";
+        foodElement.style.top = "";
+        foodElement.style.left = "";
+        foodElement.style.width = "";
+        foodElement.style.height = "";
+        foodElement.style.transform = "scale(1)";
+
+        foodElement.style.transition = "1s ease";
+        foodElement.style.opacity = "1";
     }, 2500);
 }
 
