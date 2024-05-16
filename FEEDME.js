@@ -13,8 +13,6 @@ function feed(food) {
     foodElement.style.width = styles.getPropertyValue("width");
     foodElement.style.height = styles.getPropertyValue("height");
     
-    console.log(styles.getPropertyValue("width"));
-    
     foodElement.style.transition = "5s ease";
     foodElement.style.transform = "scale(0.1)";
     foodElement.style.opacity = "0";
