@@ -27,9 +27,16 @@ function feed(food) {
 
 
 function count() {
-    let functionCallCount = 0;
+    let functionCallCount = localStorage.getItem("feed-count");
+    
+    if (functionCallCount == null) {
+        functionCallCount = 0;
+    }
+    
     return function() {
         functionCallCount++;
+
+        localStorage.setItem("feed-count", functionCallCount);
 
         var duckyOpinion = document.getElementById('ducky');
 
