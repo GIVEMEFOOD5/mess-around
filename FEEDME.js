@@ -1,3 +1,13 @@
+let duckyOpinion = document.getElementById('ducky');
+
+if (localStorage.getItem("food-count") < 10) {
+    duckyOpinion.innerHTML = `IM HANGRY, FEED ME MORE!!<br><br>YOU HAS ONLY FEED ME ${localStorage.getItem("food-count")} TIMES >:(!`;
+}
+
+else {
+    duckyOpinion.innerHTML = `THANK YOU FOR FEEDS ME!!<br><br>YOU HAS FEEDS ME ${localStorage.getItem("food-count")} TIMES :D!`;
+}
+
 function feed(food) {
     var image = document.getElementById("murder-duck");
     var foodElement = document.getElementById(food);
@@ -37,8 +47,6 @@ function count() {
         functionCallCount++;
 
         localStorage.setItem("feed-count", functionCallCount);
-
-        var duckyOpinion = document.getElementById('ducky');
 
         if (functionCallCount < 10) {
             duckyOpinion.innerHTML = `IM HANGRY, FEED ME MORE!!<br><br>YOU HAS ONLY FEED ME ${functionCallCount} TIMES >:(!`;
