@@ -66,3 +66,9 @@ function count() {
 
 // Create a function with counter
 const counter = count();
+
+// reset button
+function reset() {
+    localStorage.removeItem("feed-count")
+    location.reload();
+}
