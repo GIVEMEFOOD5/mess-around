@@ -252,7 +252,8 @@ body.snake {
 
 #up {
     position: absolute;
-    bottom: 70px;
+    bottom: 80px;
+    border: solid black;
 }
 
 #down,
@@ -260,22 +261,23 @@ body.snake {
 #right {
     position: absolute;
     bottom: 10px;
+    border: solid black;
 }
 
 #left {
-    left: calc(50% - 140px);
+    left: calc(50% - 165px);
 }
 
 #down {
-    left: calc(50% - 30px);
+    left: calc(50% - 50px);
 }
 
 #right {
-    left: calc(50% + 80px);
+    left: calc(50% + 65px);
 }
 
 #up {
-    left: calc(50% - 30px);
+    left: calc(50% - 50px);
 }
 
 /*fun page stuff*/

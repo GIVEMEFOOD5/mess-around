@@ -15,7 +15,9 @@ else {
 }
 
 function feed(food) {
+    
     var image = document.getElementById("murder-duck");
+    
     var foodElement = document.getElementById(food);
     
     var imageRect = image.getBoundingClientRect();
@@ -28,16 +30,15 @@ function feed(food) {
     
     foodElement.style.width = styles.getPropertyValue("width");
     foodElement.style.height = styles.getPropertyValue("height");
-    
     foodElement.style.transition = "5s ease";
     foodElement.style.transform = "scale(0.1)";
     foodElement.style.opacity = "0";
-
+    
     counter();
-
+   
     // Set a timeout to remove the inline styles after 5 seconds
     setTimeout(function() {
-        foodElement.style.transition = "none";
+        foodElement.style.transition = "ease";
         foodElement.style.position = "";
         foodElement.style.top = "";
         foodElement.style.left = "";
@@ -45,8 +46,10 @@ function feed(food) {
         foodElement.style.height = "";
         foodElement.style.transform = "scale(1)";
 
-        foodElement.style.transition = "1s ease";
-        foodElement.style.opacity = "1";
+        setTimeout(() => {
+            foodElement.style.transition = ""; // Reset transition property
+            foodElement.style.opacity = "1";
+        }, 500);
     }, 2500);
 }
 
