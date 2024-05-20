@@ -2,6 +2,24 @@ let duckyOpinion = document.getElementById('ducky');
 
 let feedCount = localStorage.getItem("feed-count");
 
+let bacon = document.getElementById("bacon")
+
+let cheese = document.getElementById("cheese")
+
+let cookie = document.getElementById("cookie")
+
+// Function to display the ID of the clicked element
+function displayId(event) {
+    // Get the ID of the clicked element
+    var elementId = event.target.id.toUpperCase();
+
+    // Display the ID in the display area
+    document.getElementById('foodFed').innerText = 'MMMMM ' + elementId + '!!';
+}
+
+// Attach the click event listener to all elements with the 'clickable' class
+var clickableElements = document.getElementsByClassName('feed');
+
 if (feedCount == null) {
     feedCount = 0;
 }
@@ -34,6 +52,12 @@ function feed(food) {
     foodElement.style.transform = "scale(0.1)";
     foodElement.style.opacity = "0";
     
+    for (var i = 0; i < clickableElements.length; i++) {
+
+        clickableElements[i].addEventListener('click', displayId);
+    
+    }
+
     counter();
    
     // Set a timeout to remove the inline styles after 5 seconds
