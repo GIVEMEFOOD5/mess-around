@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mess around</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="Murder Duck.png" type="image/x-icon">
+</head>
+<body>
+
+    <button onclick="location.href = 'funPage.html'">HOME</button>
+
+    <div class="heading">
+        <h1>LIST MAKER</h1>
+    </div>
+    <br>
+    <div class="container">
+        <h4>To make a new list parts type NEW.</h4>
+        <div class="row">
+            <div class="column">
+                <h3>TITLE</h3>
+                <input type="text" id="title">
+            </div>
+            <div class="column">
+                <h3>HEADING</h3>
+                <input type="text" id="header">
+            </div>
+            <div class="column">
+                <h3>MINI HEADING</h3>
+                <input type="text" id="mini">
+                
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column">
+                <textarea id="list" rows="1" cols="70"  placeholder="your list will appear here." readonly></textarea>
+            </div>
+        </div>
+    </div>
+    
+    <script src="getpain.js"></script>
+    <script src="list.js"></script>
+</body>
+</html>

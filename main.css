@@ -491,3 +491,26 @@ img.feed {
 .quackles {
     width: 70vw;
 }
+
+/*list making page */
+
+textarea {
+    background-color: #ff10f0;
+    text-decoration: black;
+    color: black;
+
+    border-color: black;
+    border-radius: 5px;
+    border-style: solid;
+    
+    overflow: hidden; /* Hides the scrollbar */
+    resize: none; /* Prevents manual resizing by the user */
+    width: 100%; /* Ensures the textarea takes the full width available */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    min-height: 50px; /* Set a minimum height to avoid shrinking too much */
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
