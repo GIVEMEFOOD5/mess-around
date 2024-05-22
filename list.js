@@ -39,7 +39,14 @@ function addItemTitle() {
         if (inputValue.toUpperCase() === 'NEW') {
             sections.push([]); // Start a new section
         } else {
-            sections[sections.length - 1].push(inputValue); // Add item to the current section
+            const outputValue = `${inputValue}
+            `;
+
+            sections[sections.length - 1].push(outputValue); // Add item to the current section
+            updateTextArea();
+        
+            inputField.value = ''; // Clear the input field
+            inputField.focus(); // Focus back on the input field
         }
         updateTextArea();
     }
@@ -48,12 +55,17 @@ function addItemTitle() {
     inputField.focus(); // Focus back on the input field
 }
 
+
+
 function addItemHead() {
     const inputField = document.getElementById('header');
     const textArea = document.getElementById('list');
     const inputValue = inputField.value.trim();
 
-    sections[sections.length - 1].push(inputValue); // Add item to the current section
+    const outputValue = `   ${inputValue}
+    `;
+
+    sections[sections.length - 1].push(outputValue); // Add item to the current section
     updateTextArea();
 
     inputField.value = ''; // Clear the input field
@@ -65,7 +77,10 @@ function addItemMini() {
     const textArea = document.getElementById('list');
     const inputValue = inputField.value.trim();
 
-    sections[sections.length - 1].push(inputValue); // Add item to the current section
+    const outputValue = `       ${inputValue}
+    `;
+
+    sections[sections.length - 1].push(outputValue); // Add item to the current section
     updateTextArea();
 
     inputField.value = ''; // Clear the input field
