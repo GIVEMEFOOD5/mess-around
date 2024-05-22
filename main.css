@@ -503,11 +503,16 @@ textarea {
     border-radius: 5px;
     border-style: solid;
     
-    overflow: hidden; /* Hides the scrollbar */
-    resize: none; /* Prevents manual resizing by the user */
-    width: 100%; /* Ensures the textarea takes the full width available */
-    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
-    min-height: 50px; /* Set a minimum height to avoid shrinking too much */
+    /* box-sizing: padding-box; */
+    overflow:hidden;
+    /* demo only: */
+    padding:10px;
+    padding-left: 30px;
+    width:60vw;
+    font-size:14px;
+    margin:50px auto;
+    display:block;
+    resize: none;
 }
 
 ::placeholder {
