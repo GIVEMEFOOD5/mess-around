@@ -109,3 +109,11 @@ function autosize(el) {
     el.style.cssText = 'height:' + el.scrollHeight + 'px';
   },0);
 }
+
+var valueInVar = '';
+
+function textareaToVar(){
+    const textarea = getElementById('showing')
+    valueInVar = document.getElementById("list").value;
+    alert(valueInVar);
+}
