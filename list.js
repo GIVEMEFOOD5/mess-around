@@ -113,7 +113,9 @@ function autosize(el) {
 var textPlace = document.getElementById('list');
 
 setInterval(() => {
-    localStorage.setItem("saveList", textPlace.value); 
+    if (textPlace.value != "") {
+        localStorage.setItem("saveList", textPlace.value); 
+    }
 });
 
 var showing = document.getElementById('showing');
