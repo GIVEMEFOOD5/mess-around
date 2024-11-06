@@ -114,7 +114,7 @@ var textPlace = document.getElementById('list');
 
 setInterval(() => {
     if (textPlace.value != "") {
-        localStorage.setItem("saveList", textPlace.value); 
+        localStorage.setItem("saveList", textPlace.value);
     }
 });
 
