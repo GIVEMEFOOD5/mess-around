@@ -110,10 +110,10 @@ function autosize(el) {
   },0);
 }
 
-var valueInVar = '';
+var textPlace = document.getElementById('list');
 
-function textareaToVar(){
-    const textarea = getElementById('showing')
-    valueInVar = document.getElementById("list").value;
-    alert(valueInVar);
-}
+localStorage.setItem("savedList", textPlace.value);
+
+var showing = document.getElementById('showing');
+
+showing.value = localStorage.getItem("savedList");
