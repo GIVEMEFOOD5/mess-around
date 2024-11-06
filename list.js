@@ -118,6 +118,6 @@ setInterval(() => {
 
 var showing = document.getElementById('showing');
 
-function showSavedList() {
-    showing.value = localStorage.getItem("saveList");
-}
+showing.value = localStorage.getItem("saveList");
+
+autosize(showing);
