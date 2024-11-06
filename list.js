@@ -112,8 +112,10 @@ function autosize(el) {
 
 var textPlace = document.getElementById('list');
 
-localStorage.setItem("savedList", textPlace.value);
+localStorage.setItem("saveList", textPlace.value);
 
 var showing = document.getElementById('showing');
 
-showing.value = localStorage.getItem("savedList");
+function showSavedList() {
+    showing.value = localStorage.getItem("saveList");
+}
