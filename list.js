@@ -123,3 +123,8 @@ var showing = document.getElementById('showing');
 showing.value = localStorage.getItem("saveList");
 
 autosize(showing);
+
+function reset() {
+    localStorage.removeItem("saveList")
+    location.reload();
+}
