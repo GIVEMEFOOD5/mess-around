@@ -3,13 +3,13 @@ const gInput = document.getElementById("G");
 const bInput = document.getElementById("B");
 
 setInterval(() => {
-    let r = rInput.value;
-    let g = gInput.value;
-    let b = bInput.value;
+    let red = rInput.value;
+    let green = gInput.value;
+    let blue = bInput.value;
 
-    document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 
-    localStorage.setItem("colour", `rgb(${r}, ${g}, ${b})`);
+    localStorage.setItem("colour", `rgb(${red}, ${green}, ${blue})`);
 
     if (localStorage.getItem("colour") == "rgb(,,,)") {
         localStorage.setItem("colour", "black");
